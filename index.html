@@ -5,39 +5,59 @@
 </head>
 <body style="background-color:#9e7c64;">
 <body>
+    <script src="tarrow.js">  </script>
+    <style type ="text/css">
+    .myban{
+      width: 300px
+      height:400px
+      float:left;
+      align:center;
+    }
+    .myban img{
+  width:250px;
+  height:400px;
+  float: left;
+  margin-left: 155px;
+    }
+    .button {
+        background-color:#a56f63;
+        border: 5px;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        border-radius:15px;
+        display: inline-block;
+        font-size: 16px;
+      }
+  </style>
 
-<h1 style="color:white;text-align:center;">
-  <p>ECHOES FROM THE UNIVERSE</p>
+<h1 style="color:#d5ac97;text-align:center;">
+  <p>TAROT PUZZLE : ECHOES FROM THE UNIVERSE</p>
+
 <h4 style="color:white;text-align:center;">
   <p>Wanna know about your position in the whole universe ?</p>
-  <p>Pick a card for you and type it down.</p>
+  <p>Pick one card and type it down.</p>
   <p>(please pay attention to the use of capital and small letter)</p>
   <input id="ip"/>
-
-  <button onclick="pickone()">see what</button>
-
-
-
-
-<script src="tarrow.js">  </script>
-
-  <style type ="css">
-
-  .myban{
-    width:400px;
-    height:300px;
-    border:1px solid#ccc;
-    margin-left:10px;
-    margin-right:10px;
-  }
-
-  </style>
-<div class="myban">
-<img src="hw1-A.png" ></img>
-<img src="hw1-B.png" ></img>
-<img src="hw1-C.png" ></img>
-
-</div>
+  <button class="button" onclick="pickone()">Pick!</button><br></br>
+  <button class="button" onclick="nextone()">Switch to another group.</button>&emsp;
+  <button class="button" onclick="end()">Leave the game.</button><br><br>
+<div class="myban"  >
+    <div id="pic1" style="display:block;"><img src="hw1-A.png"/></div>
+    <div id="pic2" style="display:block;"><img src="hw1-B.png"/></div>
+    <div id="pic3" style="display:block;"><img src="hw1-C.png"/></div>
+  </div>
+<div class="myban" >
+    <div id="pic4" style="display:none;"><img src="hw1-D.png"/></div>
+    <div id="pic5" style="display:none;"><img src="hw1-E.png"/></div>
+    <div id="pic6" style="display:none;"><img src="hw1-F.png"/></div>
+  </div>
+<div class="myban" >
+    <div id="pic7" style="display:none;"><img src="hw1-G.png"/></div>
+    <div id="pic8" style="display:none;"><img src="hw1-H.png"/></div>
+    <div id="pic9" style="display:none;"><img src="hw1-I.png"/></div>
+  </div>
 
 </body>
 </html>
